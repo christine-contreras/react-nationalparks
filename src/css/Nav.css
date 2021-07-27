@@ -1,0 +1,48 @@
+.appbar.MuiAppBar-root{
+    padding: 1em;
+}
+
+.logo{
+max-width: 120px;
+display: inline-block;
+text-align: center;
+text-decoration: none;
+}
+
+.logo svg{
+width: 100%;
+}
+
+.cls-1{fill:#372B15;}
+.cls-2{fill:none;stroke:#372B15;stroke-miterlimit:10;stroke-width:6px;}
+
+.MuiTypography-caption.logo-text{
+text-transform: uppercase;
+font-weight: 600;
+font-size: 0.75rem;
+color: #4e342e;
+
+}
+
+
+.toolbar.MuiToolbar-root {
+    justify-content: center;
+}
+
+.navigation-btn.MuiIconButton-root{
+    position: absolute;
+    right: 1%;
+}
+
+.navigation-btn .MuiSvgIcon-root{
+    width: 1.25em;
+    height: 1.25em;
+}
+
+.active.MuiListItem-root{
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.active .MuiTypography-body1{
+    font-weight: bold;
+}

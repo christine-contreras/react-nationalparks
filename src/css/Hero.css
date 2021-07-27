@@ -1,0 +1,77 @@
+/* hero css */
+.hero{
+    background: url('https://images.unsplash.com/photo-1606859309981-270838d57ed8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80') no-repeat center;
+    height: 80vh;
+    min-height: 400px;
+    max-height: 900px;
+    display: grid;
+    grid-template-columns: repeat(5, [col] 20%);
+    grid-template-rows: repeat(1, [row] 100% );
+}
+
+
+.hero-image-1, .hero-image-2{
+    display: none;
+}
+
+.hero-content{
+    grid-column: col 1 / span 5;
+    grid-row: row 1 / span 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 3em;
+    z-index: 10;
+}
+
+@media (min-width: 992px) {
+    .hero{
+        background: none;
+        grid-template-columns: repeat(10, [col] 10%);
+        grid-template-rows: repeat(9, [row] 11% );
+        height: auto;
+        
+    }
+
+    .hero-image-1, .hero-image-2{
+        display: block;
+    } 
+    
+    .hero-image-1{
+        grid-column: col 1 / span 4;
+    }
+
+    .hero-image-2{
+        grid-column: col 3 / span 8;
+        grid-row: row 4;
+    }
+    
+    .hero-content{
+        grid-column: col 5 / span 6;
+        grid-row: row 1 / span 3;
+        text-align: left;
+        padding-left: 1em;
+    }
+    
+}
+
+
+form, .hero-form .MuiButtonGroup-root {
+    width: 100%;
+}
+
+.hero-form .MuiFormControl-root{
+    width: 75%;
+}
+
+.hero-form .MuiInputLabel-outlined.MuiInputLabel-shrink, .hero-form .MuiOutlinedInput-root{
+    background-color: rgba(255, 255, 255, 0.708);
+}
+
+.hero-form .MuiButtonBase-root{
+    width: 25%;
+}

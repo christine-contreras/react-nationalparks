@@ -1,0 +1,16 @@
+.card.MuiCard-root {
+    max-width: 500px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 17%);
+    
+}
+
+.card:hover, .card:active {
+    transform: scale(1.04);
+    box-shadow: 0 4px 20px 0 rgb(0 0 0 / 12%);
+}
+
+.card .MuiCardMedia-root{
+    height: 500px;
+    width: auto;
+    
+}

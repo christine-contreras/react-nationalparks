@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;600&family=Roboto:wght@300;400&display=swap');
+
+body {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+
+.img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.MuiTypography-root .subtitle {
+  color: #A38B74;
+  font-size: 50%;
+  font-weight: 400;
+  display: block;
+  text-align: center;
+}
