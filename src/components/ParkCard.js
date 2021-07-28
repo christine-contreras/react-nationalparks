@@ -3,31 +3,40 @@ import '../css/ParkCard.css'
 import { Grid, Card, CardMedia, CardContent, CardActions, Typography, Button, Tooltip, IconButton } from '@material-ui/core'
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder'
 import FavoriteIcon from '@material-ui/icons/Favorite'
+import TrendingFlatIcon from '@material-ui/icons/TrendingFlat'
 
-export default function ParkCard({parkInfo, handleSaveParks, handleUnsavePark, page, parkIsSaved}) {
+
+export default function ParkCard({parkInfo, handleSaveParks, handleUnsavePark, handleSelectPark, history, parkIsSaved}) {
+
+    const viewParkButtonClick = () => {
+        handleSelectPark(parkInfo)
+        history.push('/park-details')
+    }
+
     return (
         <Grid
         item
         container
         justifyContent="center"
-        alignItems="center" 
+        alignItems="stretch"
         xs={12} sm={12} md={6}>
             <Card className="card" elevation={0}>
                 <CardMedia
                 image={parkInfo.images[0].url}
                 />
+
                 <CardContent align="left">
-                     <Typography variant="h5" component="h3" gutterBottom>
-                     {parkInfo.fullName}
+                    <Typography variant="h5" component="h3" color="secondary" gutterBottom>
+                    {parkInfo.fullName}
                     </Typography>
-                    <Typography variant="caption" component="p">
+                    <Typography variant="caption" component="p" color="secondary">
                         {parkInfo.description.slice(0, 200).concat('...')}
                     </Typography>
 
                 </CardContent> 
-                <CardActions>
+                <CardActions className="card-actions">
                     { parkIsSaved === undefined ?
-                     <Tooltip title="Save Park" arrow>
+                    <Tooltip title="Save Park" arrow>
                         <IconButton color="primary"
                         onClick={() => handleSaveParks(parkInfo)}
                         >
@@ -44,15 +53,17 @@ export default function ParkCard({parkInfo, handleSaveParks, handleUnsavePark, p
                     </Tooltip>
                     }
 
-
-                    {/* <Button
-                    variant="contained"
+                    <Button
+                    variant="text"
+                    size="large"
                     color="primary"
-                    onClick={() => handleParks(parkInfo)}
+                    endIcon={<TrendingFlatIcon />}
+                    onClick={viewParkButtonClick}
                     >
-                        {page === "/saved" ? "Remove Park" : "Save Park"}
-                    </Button> */}
+                        View Park 
+                    </Button>
                 </CardActions>
+
             </Card>
         </Grid>
     )

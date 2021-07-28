@@ -4,12 +4,14 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Layout from './containers/Layout'
 import Home from './containers/Home'
 import SavedParks from './containers/SavedParks'
+import ParkDetails from './containers/ParkDetails'
 
 
 
 export class App extends Component {
   state = {
-    savedParks: []
+    savedParks: [],
+    selectedPark: null
   }
 
   componentDidMount() {
@@ -51,18 +53,40 @@ export class App extends Component {
     })
   }
 
+  handleSelectPark = (selectedPark) => {
+    this.setState({selectedPark})
+  }
+
   render() {
     return (
       <Router>
       <Layout>
 
         <Route exact path="/"
-        render={(routerProps) => <Home {...routerProps} 
-        handleSaveParks={this.handleSaveParks} handleUnsavePark={this.handleUnsavePark} savedParks={this.state.savedParks}/>} 
+        render={(routerProps) => (
+          <Home {...routerProps} 
+          handleSaveParks={this.handleSaveParks}
+          handleUnsavePark={this.handleUnsavePark}
+          handleSelectPark={this.handleSelectPark}
+          savedParks={this.state.savedParks} />
+        )} 
         />
 
         <Route exact path="/saved-parks"
-        render={(routerProps) => <SavedParks {...routerProps} savedParks={this.state.savedParks} handleUnsavePark={this.handleUnsavePark} handleSaveParks={this.handleSaveParks}/>}/>
+        render={(routerProps) => (
+          <SavedParks {...routerProps}
+          savedParks={this.state.savedParks}
+          handleUnsavePark={this.handleUnsavePark}
+          handleSaveParks={this.handleSaveParks}/>
+        )}/>
+
+        <Route exact path="/park-details"
+        render={(routerProps) => (
+          <ParkDetails {...routerProps}
+          park={this.state.selectedPark}
+          handleUnsavePark={this.handleUnsavePark}
+          handleSaveParks={this.handleSaveParks}/>
+        )}/>
 
        </Layout>
        </Router>

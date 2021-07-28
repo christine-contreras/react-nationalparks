@@ -1,0 +1,57 @@
+.park-details{
+    width: 100%;
+    min-height: 700px;
+    display: grid;
+    grid-template-columns: repeat(8, [col] 12.5%);
+    grid-template-rows: repeat(6, [row] 16.667% );
+    border-radius: 5px;
+    border: 1px solid #e4e4e4;
+}
+
+
+/* nav */
+.details-menu{
+    grid-column: col 1 / span 2;
+    grid-row: row 1 / span 2;
+    text-align: left;
+    padding: 1em 2em;
+}
+
+.details-menu .MuiListItem-root:hover, .details-menu .MuiListItem-root:active{
+    opacity: .75;
+}
+
+.details-menu .MuiListItem-root.active::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: #76976c;
+    border-radius: 100%;
+    position: absolute;
+    left: -22px;
+  }
+
+  .details-menu .MuiList-root{
+      padding-left: 1em;
+  }
+  
+
+  /* info */
+.details-info{
+    grid-column: col 1 / span 2;
+    grid-row: row 3 / span 4;
+    text-align: left;
+    padding: 2em;
+    overflow: scroll;
+}
+
+.hours .MuiListItem-gutters{
+    padding-left: 0;
+    padding-bottom: 5px;
+
+}
+
+.address.MuiList-padding{
+    padding-left: 0;
+    padding-right: 0;
+}

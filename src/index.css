@@ -12,8 +12,54 @@ body {
 
 .MuiTypography-root .subtitle {
   color: #A38B74;
-  font-size: 50%;
+  font-size: 75%;
   font-weight: 400;
   display: block;
+}
+
+.color-1{
+  color: #3e2723;
+}
+
+.color-2{
+  color: #76976c;
+}
+
+.color-3{
+  color: #A38B74;
+}
+
+.color-4{
+  color: #a5c89a;
+}
+
+
+.background-1{
+  background-color: #3e2723;
+}
+
+.background-2{
+  background-color: #76976c;
+}
+
+.background-3, .MuiDivider-root.background-3{
+  background-color: #A38B74;
+}
+
+.background-4{
+  background-color: #a5c89a;
+}
+
+
+.text-light{
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.center {
   text-align: center;
 }
+
+.padding-top{
+  padding-top: 10px;
+}
+

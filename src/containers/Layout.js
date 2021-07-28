@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => {
             width: '100%',
             position: 'relative',
             top: 140,
-            maxWidth: 1200,
+            maxWidth: 1400,
             margin: 'auto'
         }
     }

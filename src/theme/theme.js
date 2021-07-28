@@ -1,5 +1,5 @@
 import { createTheme } from '@material-ui/core/styles'
-import { brown, lightGreen } from '@material-ui/core/colors'
+import { brown } from '@material-ui/core/colors'
 
 //https://material-ui.com/customization/default-theme/#default-theme
 //https://material-ui.com/customization/color/#color
@@ -13,7 +13,7 @@ const theme = createTheme({
           },
           secondary: {
             // light: '#ff72d6',
-            main: brown[800],
+            main: brown[900],
             // dark: '#b90076',
             contrastText: '#fff',
           },
@@ -45,6 +45,17 @@ const theme = createTheme({
       h6: {
         fontFamily: '"Montserrat", Helvetica, Arial, sans-serif',
         fontWeight: 600,
+        fontSize: '1.25em'
+      },
+      subtitle1: {
+        // fontWeight: 100,
+        fontSize: '1.25em'
+      }
+      ,
+      body2: {
+        fontWeight: 100,
+        fontSize: '1em',
+        lineHeight: 1.5
       }
     }
   })

@@ -1,6 +1,10 @@
 .card.MuiCard-root {
     max-width: 500px;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 17%);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+
     
 }
 
@@ -11,6 +15,10 @@
 
 .card .MuiCardMedia-root{
     height: 500px;
-    width: auto;
+    width: 100%;
     
+}
+
+.card-actions{
+    justify-content: space-between;
 }
