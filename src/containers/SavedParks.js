@@ -1,14 +1,16 @@
 import React from 'react'
 import ParksContainer from './ParksContainer'
 
-export default function SavedParks() {
+export default function SavedParks({location, savedParks, handleUnsavePark, handleSaveParks}) {
     return (
         <>
             <ParksContainer
-            page={this.props.location.pathname}
+            page={location.pathname}
             title="Saved Parks"
-            parks={this.props.savedParks}
-            handleParks={this.props.handleParks}/>
+            savedParks={savedParks}
+            handleSaveParks={handleSaveParks}
+            handleUnsavePark={handleUnsavePark}
+            parks={savedParks}/>
         </>
     )
 }

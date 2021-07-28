@@ -61,8 +61,8 @@ export class App extends Component {
         handleSaveParks={this.handleSaveParks} handleUnsavePark={this.handleUnsavePark} savedParks={this.state.savedParks}/>} 
         />
 
-        <Route exact path="/saved"
-        render={(routerProps) => <SavedParks {...routerProps} savedParks={this.state.savedParks} handleParks={this.handleUnsavePark}/>}/>
+        <Route exact path="/saved-parks"
+        render={(routerProps) => <SavedParks {...routerProps} savedParks={this.state.savedParks} handleUnsavePark={this.handleUnsavePark} handleSaveParks={this.handleSaveParks}/>}/>
 
        </Layout>
        </Router>

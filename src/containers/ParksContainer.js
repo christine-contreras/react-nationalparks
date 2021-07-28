@@ -71,7 +71,7 @@ export default function ParksContainer({title, parkState, parks, handleSaveParks
 
     //function to check if park is saved or not (NOT WORKING)
     const checkIfParkIsSaved = (checkPark) => {
-        savedParks.map(park => park.id === checkPark.id)
+        return savedParks.find(park => park.id === checkPark.id)
     }
 
     return (
