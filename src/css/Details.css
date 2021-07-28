@@ -1,6 +1,6 @@
 .park-details{
     width: 100%;
-    min-height: 700px;
+    max-height: 800px;
     display: grid;
     grid-template-columns: repeat(8, [col] 12.5%);
     grid-template-rows: repeat(6, [row] 16.667% );
@@ -54,4 +54,13 @@
 .address.MuiList-padding{
     padding-left: 0;
     padding-right: 0;
+}
+
+
+/* about */
+.details-about{
+    grid-column: col 3 / span 3;
+    grid-row: row 1 / span 6;
+    text-align: left;
+    padding: 1em 2em;
 }

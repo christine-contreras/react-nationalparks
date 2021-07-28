@@ -39,7 +39,12 @@ export class ParkDetails extends Component {
                     directionsUrl={this.props.park.directionsUrl}
                     />
 
-                    <ParkAbout />
+                    <ParkAbout
+                    info={this.props.park.description}
+                    url={this.props.park.url}
+                    contactInfo={this.props.park.contacts}
+                    image={this.props.park.images[0]}
+                     />
 
                     <ParkFees />
 
