@@ -30,7 +30,7 @@ export class ParkWeather extends Component {
         let icon 
 
         switch(description) {
-            case "Partly Cloudy":
+            case "Partly cloudy":
             case "Cloudy":
             case "Overcast":
             case "Fog":
@@ -70,7 +70,7 @@ export class ParkWeather extends Component {
 
     render() {
         return (
-            <Grid item className="details-activity-item background-2 text-light">
+            <Grid item className="details-activity-item item-2 background-2 text-light">
                 <Typography variant="h6" component="h2" className="center" gutterBottom>
                     Current Weather
                 </Typography>

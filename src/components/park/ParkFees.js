@@ -1,15 +1,17 @@
 import React from 'react'
 import { Grid, Typography } from '@material-ui/core'
 
+
 export default function ParkFees({image, fees}) {
 
     const imageStyle = {
         width: "100%",
         height: "55%",
+        minHeight: 500,
         position: "relative",
         left: 0,
         top: 0,
-        background: `url(${image.url}) no-repeat center`,
+        background: image.url ? `url(${image.url}) no-repeat center` : '#A38B74',
         backgroundSize: 'cover',
         zIndex: -1,
         display: 'flex',

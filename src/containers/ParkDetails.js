@@ -11,6 +11,12 @@ import { Grid, Button } from '@material-ui/core'
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos'
 
 export class ParkDetails extends Component {
+
+    //function to check if park is saved or not 
+    // checkIfParkIsSaved = (checkPark) => {
+    //     return savedParks.find(park => park.id === checkPark.id)
+    // }
+
     render() {
         return (
             <Grid container>
@@ -25,7 +31,7 @@ export class ParkDetails extends Component {
                 </Grid>
 
                 <Grid item container className="park-details">
-                    <Grid item xs={12} sm={12} sm={3}>
+                    <Grid item className="details-left" xs={12} sm={12} md={3}>
                         <ParkNav
                         state={this.props.park.states}
                         name={this.props.park.fullName}
@@ -46,12 +52,13 @@ export class ParkDetails extends Component {
                     url={this.props.park.url}
                     contactInfo={this.props.park.contacts}
                     image={this.props.park.images[0]}
+                    handleUnsavePark={this.props.handleUnsavePark}
+                    handleSaveParks={this.props.handleSaveParks}
                      />
 
-                    <Grid item container
-                    xs={12} sm={12} sm={4}
-                    direction="column"
-                    className="relative">
+                    <Grid item
+                    xs={12} sm={12} md={4}
+                    className="relative details-right">
                         <ParkFees
                         image={this.props.park.images[1]}
                         fees={this.props.park.entranceFees}/>

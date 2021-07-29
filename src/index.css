@@ -78,3 +78,15 @@ body {
 .MuiGrid-direction-xs-column{
   flex-flow: column nowrap;
 }
+
+.image-hidden-xs{
+  display: none;
+
+}
+
+@media only screen and (min-width: 960px){
+  .image-hidden-xs{
+    display: block;
+  
+  }
+}

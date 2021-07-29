@@ -18,7 +18,7 @@ export default function ParkAbout({info, url, contactInfo, image}) {
 
     return (
         <Grid item
-        xs={12} sm={12} sm={5}
+        xs={12} sm={12} md={5}
         className="details-about">
             <Divider className="background-3" />
 
@@ -62,7 +62,7 @@ export default function ParkAbout({info, url, contactInfo, image}) {
             </div>
             </div>
             
-            <div style={imageStyle}></div>
+            <div style={imageStyle} className="image-hidden-xs"></div>
         </Grid>
     )
 }

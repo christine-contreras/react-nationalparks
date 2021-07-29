@@ -1,20 +1,22 @@
 .park-details{
     width: 100%;
+    height: auto;
     min-height: 800px;
-    /* display: grid;
-    grid-template-columns: repeat(8, [col] 12.5%);
-    grid-template-rows: repeat(6, [row] 16.667% ); */
     border-radius: 5px;
     border: 1px solid #e4e4e4;
+    margin-bottom: 2em!important;
 }
 
-
+.details-left{
+    display: flex;
+    flex-flow: column nowrap;
+}
 /* nav */
 .details-menu{
-    /* grid-column: col 1 / span 2;
-    grid-row: row 1 / span 2; */
     text-align: left;
     padding: 1em 2em;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .details-menu .MuiListItem-root:hover, .details-menu .MuiListItem-root:active{
@@ -38,12 +40,11 @@
 
   /* info */
 .details-info{
-    /* grid-column: col 1 / span 2;
-    grid-row: row 3 / span 4; */
     text-align: left;
     padding: 2em;
     max-height: 800px;
     overflow: scroll;
+    flex-grow: 1;
 }
 
 .hours .MuiListItem-gutters{
@@ -67,11 +68,14 @@
 
 /* about */
 .details-about{
-    /* grid-column: col 3 / span 3;
-    grid-row: row 1 / span 6; */
     text-align: left;
     padding: 1em 2em;
     position: relative;
+}
+
+.details-right{
+    flex-flow: column nowrap;
+    overflow: scroll;
 }
 
 /* fees */
@@ -91,7 +95,18 @@
 .details-activity-item{
     width: 50%;
     padding: 1em;
+    max-height: 500px;
+    overflow: scroll;
 }
+
+.details-activity-item.item-1{
+    border-bottom-left-radius: 5px;
+}
+
+.details-activity-item.item-2{
+    border-bottom-right-radius: 5px;
+}
+
 
 /* weather */
 .weather-icon{
@@ -103,3 +118,19 @@
     width: 70%;
     height: 70%;
 }
+
+
+@media only screen and (min-width: 960px){
+    .details-menu{
+        border-top-right-radius: 0;
+    }
+
+    .details-info{
+        border-bottom-left-radius: 5px;
+    }
+
+
+    .details-activity-item.item-1{
+        border-bottom-left-radius: 0;
+    }
+  }

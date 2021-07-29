@@ -84,6 +84,7 @@ export class App extends Component {
         render={(routerProps) => (
           <ParkDetails {...routerProps}
           park={this.state.selectedPark}
+          savedParks={this.state.savedParks}
           handleUnsavePark={this.handleUnsavePark}
           handleSaveParks={this.handleSaveParks}/>
         )}/>
