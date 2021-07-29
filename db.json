@@ -1,234 +1,6 @@
 {
   "parks": [
     {
-      "id": "14025CA9-91DE-4D36-B4CA-9880463C3BC2",
-      "url": "https://www.nps.gov/blue/index.htm",
-      "fullName": "Bluestone National Scenic River",
-      "parkCode": "blue",
-      "description": "The Bluestone River and the rugged and ancient gorge it has carved is a richly diverse and scenic area of the southern Appalachians. Bluestone National Scenic River is preserved as a living landscape that provides an unspoiled experience for visitors and a haven for a variety of plants and animals. The park protects a 10.5-mile section of the Bluestone River in southern West Virginia.",
-      "latitude": "37.56577087",
-      "longitude": "-80.98366657",
-      "latLong": "lat:37.56577087, long:-80.98366657",
-      "activities": [
-        {
-          "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
-          "name": "Biking"
-        },
-        {
-          "id": "299CB934-88DC-474F-A33D-E43E29A149C2",
-          "name": "Mountain Biking"
-        },
-        {
-          "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
-          "name": "Boating"
-        },
-        {
-          "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
-          "name": "Fishing"
-        },
-        {
-          "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
-          "name": "Freshwater Fishing"
-        },
-        {
-          "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
-          "name": "Guided Tours"
-        },
-        {
-          "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
-          "name": "Hiking"
-        },
-        {
-          "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
-          "name": "Hunting and Gathering"
-        },
-        {
-          "id": "25559F45-F162-4B8B-BEC2-B341034A2AF4",
-          "name": "Hunting"
-        },
-        {
-          "id": "4D224BCA-C127-408B-AC75-A51563C42411",
-          "name": "Paddling"
-        },
-        {
-          "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
-          "name": "Canoeing"
-        },
-        {
-          "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
-          "name": "Kayaking"
-        },
-        {
-          "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
-          "name": "Junior Ranger Program"
-        },
-        {
-          "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
-          "name": "Wildlife Watching"
-        },
-        {
-          "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
-          "name": "Birdwatching"
-        }
-      ],
-      "topics": [
-        {
-          "id": "1F833C99-A75D-4F9E-9256-B96523485466",
-          "name": "Farming and  Agriculture"
-        },
-        {
-          "id": "0D00073E-18C3-46E5-8727-2F87B112DDC6",
-          "name": "Animals"
-        },
-        {
-          "id": "957EF2BD-AC6C-4B7B-BD9A-87593ADC6691",
-          "name": "Birds"
-        },
-        {
-          "id": "1608649A-E7D7-4529-BD83-074C90F9FB68",
-          "name": "Fish"
-        },
-        {
-          "id": "41B1A0A3-11FF-4F55-9CB9-034A7E28B087",
-          "name": "Forests and Woodlands"
-        },
-        {
-          "id": "DE2F0F3C-C0C4-410F-90D3-97EEC33D348E",
-          "name": "Deciduous Forests"
-        },
-        {
-          "id": "F0F97E32-2F29-41B4-AF98-9FBE8DAB36B1",
-          "name": "Geology"
-        },
-        {
-          "id": "101F4D51-F99D-45A6-BBB6-CD481E5FACED",
-          "name": "Mountains"
-        },
-        {
-          "id": "A155238F-0DD2-4610-9B87-05FCE1C59283",
-          "name": "River and Riparian"
-        },
-        {
-          "id": "4244F489-6813-4B7A-9D0C-20CE098C8FFF",
-          "name": "Rock Landscapes and Features"
-        },
-        {
-          "id": "5BE55D7F-BDB6-4E3D-AC35-2D8EBB974417",
-          "name": "Trails"
-        }
-      ],
-      "states": "WV",
-      "contacts": {
-        "phoneNumbers": [
-          {
-            "phoneNumber": "3044650508",
-            "description": "",
-            "extension": "",
-            "type": "Voice"
-          },
-          {
-            "phoneNumber": "3044650591",
-            "description": "",
-            "extension": "",
-            "type": "Fax"
-          }
-        ],
-        "emailAddresses": [
-          {
-            "description": "",
-            "emailAddress": "neri_interpretation@nps.gov"
-          }
-        ]
-      },
-      "entranceFees": [
-        {
-          "cost": "0.00",
-          "description": "There is no entrance fee for the park. Pipestem Resort State Park charges a small fee to ride the tram to and from the bottom at the entrance in Pipestem.",
-          "title": "Entrance"
-        }
-      ],
-      "entrancePasses": [],
-      "fees": [],
-      "directionsInfo": "Bluestone National Scenic River is most easily accessed via Bluestone State Park and Pipestem Resort State Park. A narrow, graveled park road provides access to the Bluestone Turnpike Trail at the former Lilly town site at the confluence of the Little Bluestone River. To reach these parks from I-64, take exit 139, then south on Rt. 20. From I-77 take exit 14 to Rt.20 north. Either direction, Bluestone State Park is 15 miles and Pipestem is 22 miles.",
-      "directionsUrl": "http://www.nps.gov/blue/planyourvisit/directions.htm",
-      "operatingHours": [
-        {
-          "exceptions": [],
-          "description": "The park is accessible year-round at two entrance points, Bluestone State Park and the former Lilly townsite, and seasonally at Pipestem Resort State Park. The park is open 24 hours a day.",
-          "standardHours": {
-            "wednesday": "All Day",
-            "monday": "All Day",
-            "thursday": "All Day",
-            "sunday": "All Day",
-            "tuesday": "All Day",
-            "friday": "All Day",
-            "saturday": "All Day"
-          },
-          "name": "Bluestone National Scenic River"
-        }
-      ],
-      "addresses": [
-        {
-          "postalCode": "25979",
-          "city": "Pipestem",
-          "stateCode": "WV",
-          "line1": "3405 Pipestem Drive",
-          "type": "Physical",
-          "line3": "",
-          "line2": ""
-        },
-        {
-          "postalCode": "25846",
-          "city": "Glen Jean",
-          "stateCode": "WV",
-          "line1": "P.O. Box 246",
-          "type": "Mailing",
-          "line3": "",
-          "line2": ""
-        }
-      ],
-      "images": [
-        {
-          "credit": "NPS Photo",
-          "title": "The Turnpike Trail",
-          "altText": "Turnpike Trail",
-          "caption": "The ten mile Turnpike Trail parallels the Bluestone, connecting Pipestem Resort State Park and Bluestone State Park.",
-          "url": "https://www.nps.gov/common/uploads/structured_data/3C8002E5-1DD8-B71B-0B1E041647BF6D9D.jpg"
-        },
-        {
-          "credit": "NPS Photo / Eve West",
-          "title": "Leading a hike",
-          "altText": "Hiking the Turnpike Trail",
-          "caption": "Ranger Richard leads a guided walk on the Turnpike Trail",
-          "url": "https://www.nps.gov/common/uploads/structured_data/3C8005C6-1DD8-B71B-0B0EFC0F7BB22F3A.jpg"
-        },
-        {
-          "credit": "NPS Photo / Eve West",
-          "title": "Enjoying the day",
-          "altText": "Youngster enjoying the Bluestone",
-          "caption": "A young hiker makes his own connection with Bluestone National Scenic River.",
-          "url": "https://www.nps.gov/common/uploads/structured_data/3C800735-1DD8-B71B-0B89CDFCEB32DDDB.jpg"
-        },
-        {
-          "credit": "NPS Photo",
-          "title": "Bluestone River",
-          "altText": "Bluestone River",
-          "caption": "Bluestone National Scenic River offers a quiet getaway.",
-          "url": "https://www.nps.gov/common/uploads/structured_data/3C800E49-1DD8-B71B-0BD0956F0EFE00F0.jpg"
-        },
-        {
-          "credit": "NPS Photo / Eve West",
-          "title": "Bluestone Turnpike Trail",
-          "altText": "Ranger giving information to park visitor",
-          "caption": "NPS Ranger Richard Altaire provides an overview of the park map to a visitor to the Bluestone NSR.",
-          "url": "https://www.nps.gov/common/uploads/structured_data/3C800FC9-1DD8-B71B-0B66BDF36878F435.jpg"
-        }
-      ],
-      "weatherInfo": "Summer: Temperatures range from low to mid 60's at night to middle to upper 80's during the daytime hours. Winter: Temperatures average from the mid 20's to the mid 40's. Snowfall amount varies, but averages 5\" per month Dec. - March. Spring and Fall: temperatures and rainfall variable. Peak fall foliage is usually mid-October.",
-      "name": "Bluestone",
-      "designation": "National Scenic River"
-    },
-    {
       "id": "872417E6-2F91-4FDA-89A7-865B51B22332",
       "url": "https://www.nps.gov/camo/index.htm",
       "fullName": "Castle Mountains National Monument",
@@ -402,6 +174,218 @@
       "weatherInfo": "Weather at Castle Mountains changes with the seasons. Freezing temperatures are expected in winter, with occasional snow. Spring brings mild warm days and cooler nights. With enough rain, wildflowers can carpet the area, making for spectacular displays. Summer months are much hotter, with temperatures nearing 100 degrees Fahrenheit. Strong monsoonal storms in late summer may cause flash-flooding in low-lying areas and can create hazardous road conditions. Fall is a cooler respite after the heat of summer.",
       "name": "Castle Mountains",
       "designation": "National Monument"
+    },
+    {
+      "id": "77E0D7F0-1942-494A-ACE2-9004D2BDC59E",
+      "url": "https://www.nps.gov/abli/index.htm",
+      "fullName": "Abraham Lincoln Birthplace National Historical Park",
+      "parkCode": "abli",
+      "description": "For over a century people from around the world have come to rural Central Kentucky to honor the humble beginnings of our 16th president, Abraham Lincoln. His early life on Kentucky's frontier shaped his character and prepared him to lead the nation through Civil War. The country's first memorial to Lincoln, built with donations from young and old, enshrines the symbolic birthplace cabin.",
+      "latitude": "37.5858662",
+      "longitude": "-85.67330523",
+      "latLong": "lat:37.5858662, long:-85.67330523",
+      "activities": [
+        {
+          "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+          "name": "Astronomy"
+        },
+        {
+          "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+          "name": "Stargazing"
+        },
+        {
+          "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+          "name": "Food"
+        },
+        {
+          "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+          "name": "Picnicking"
+        },
+        {
+          "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+          "name": "Junior Ranger Program"
+        },
+        {
+          "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+          "name": "Wildlife Watching"
+        },
+        {
+          "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+          "name": "Birdwatching"
+        },
+        {
+          "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+          "name": "Shopping"
+        },
+        {
+          "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+          "name": "Bookstore and Park Store"
+        },
+        {
+          "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+          "name": "Gift Shop and Souvenirs"
+        }
+      ],
+      "topics": [
+        {
+          "id": "D10852A3-443C-4743-A5FA-6DD6D2A054B3",
+          "name": "Birthplace"
+        },
+        {
+          "id": "F669BC40-BDC4-41C0-9ACE-B2CD25373045",
+          "name": "Presidents"
+        },
+        {
+          "id": "0D00073E-18C3-46E5-8727-2F87B112DDC6",
+          "name": "Animals"
+        },
+        {
+          "id": "957EF2BD-AC6C-4B7B-BD9A-87593ADC6691",
+          "name": "Birds"
+        },
+        {
+          "id": "E25F3456-43ED-45DD-93BC-057F9B944F7A",
+          "name": "Caves, Caverns and Karst"
+        },
+        {
+          "id": "F0F97E32-2F29-41B4-AF98-9FBE8DAB36B1",
+          "name": "Geology"
+        },
+        {
+          "id": "4BE01DC5-52E6-4F18-8C9A-B22D65965F6D",
+          "name": "Groundwater"
+        },
+        {
+          "id": "0E1A04CC-EB51-4F18-93D4-EC0B0B4EC1E3",
+          "name": "Freshwater Springs"
+        },
+        {
+          "id": "A7359FC4-DAD8-45F5-AF15-7FF62F816ED3",
+          "name": "Night Sky"
+        }
+      ],
+      "states": "KY",
+      "contacts": {
+        "phoneNumbers": [
+          {
+            "phoneNumber": "2703583137",
+            "description": "",
+            "extension": "",
+            "type": "Voice"
+          },
+          {
+            "phoneNumber": "2703583874",
+            "description": "",
+            "extension": "",
+            "type": "Fax"
+          }
+        ],
+        "emailAddresses": [
+          {
+            "description": "",
+            "emailAddress": "ABLI_Administration@nps.gov"
+          }
+        ]
+      },
+      "entranceFees": [
+        {
+          "cost": "0.00",
+          "description": "There is no fee associated with visiting either unit of the park.",
+          "title": "Fee Free Park"
+        }
+      ],
+      "entrancePasses": [],
+      "fees": [],
+      "directionsInfo": "The Birthplace Unit of the park is located approximately 2 miles south of the town of Hodgenville on U.S. Highway 31E South. The Boyhood Home Unit at Knob Creek is located approximately 10 miles northeast of the Birthplace Unit of the park.",
+      "directionsUrl": "http://www.nps.gov/abli/planyourvisit/directions.htm",
+      "operatingHours": [
+        {
+          "exceptions": [
+            {
+              "exceptionHours": {},
+              "startDate": "2022-01-01",
+              "name": "Park is Closed",
+              "endDate": "2022-01-01"
+            },
+            {
+              "exceptionHours": {},
+              "startDate": "2021-11-25",
+              "name": "Park is Closed",
+              "endDate": "2021-11-25"
+            },
+            {
+              "exceptionHours": {},
+              "startDate": "2021-12-25",
+              "name": "Park is Closed",
+              "endDate": "2021-12-25"
+            }
+          ],
+          "description": "The Memorial Building is open 9:00 am - 4:30 pm eastern time with a limited viewing area.  The Visitor Center and grounds of the Birthplace Unit are open 9:00 am - 5:00 pm eastern time with one-way traffic flow and social distancing.\n\n\nThe Boyhood Home Unit at Knob Creek will be closed August 3, 2020, to July 31, 2021, due to the Lincoln Tavern Rehabilitation Project.",
+          "standardHours": {
+            "wednesday": "9:00AM - 5:00PM",
+            "monday": "9:00AM - 5:00PM",
+            "thursday": "9:00AM - 5:00PM",
+            "sunday": "9:00AM - 5:00PM",
+            "tuesday": "9:00AM - 5:00PM",
+            "friday": "9:00AM - 5:00PM",
+            "saturday": "9:00AM - 5:00PM"
+          },
+          "name": "Abraham Lincoln Birthplace National Historical Park"
+        }
+      ],
+      "addresses": [
+        {
+          "postalCode": "42748",
+          "city": "Hodgenville",
+          "stateCode": "KY",
+          "line1": "2995 Lincoln Farm Road",
+          "type": "Physical",
+          "line3": "",
+          "line2": ""
+        },
+        {
+          "postalCode": "42748",
+          "city": "Hodgenville",
+          "stateCode": "KY",
+          "line1": "2995 Lincoln Farm Road",
+          "type": "Mailing",
+          "line3": "",
+          "line2": ""
+        }
+      ],
+      "images": [
+        {
+          "credit": "NPS Photo",
+          "title": "The Memorial Building with fall colors",
+          "altText": "The Memorial Building surrounded by fall colors",
+          "caption": "Over 200,000 people a year come to walk up the steps of the Memorial Building to visit the site where Abraham Lincoln was born",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C861078-1DD8-B71B-0B774A242EF6A706.jpg"
+        },
+        {
+          "credit": "NPS Photo",
+          "title": "The Memorial Building",
+          "altText": "The first memorial erected to honor Abraham Lincoln",
+          "caption": "The Memorial Building constructed on the traditional site of the birth of Abraham Lincoln.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C861263-1DD8-B71B-0B71EF9B95F9644F.jpg"
+        },
+        {
+          "credit": "NPS Photo",
+          "title": "The Symbolic Birth Cabin of Abraham Lincoln",
+          "altText": "The symbolic birth cabin on the traditional site of the birth of Abraham Lincoln.",
+          "caption": "The symbolic birth cabin of Abraham Lincoln.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C86137D-1DD8-B71B-0B978BACD7EBAEF1.jpg"
+        },
+        {
+          "credit": "NPS Photo",
+          "title": "Statue of the Lincoln Family in the Visitor Center",
+          "altText": "Statue of the Lincoln family in the park's Visitor Center",
+          "caption": "Visitors to the park can view the statue of the Lincoln family.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C8614D1-1DD8-B71B-0B1AF72CA452B051.jpg"
+        }
+      ],
+      "weatherInfo": "There are four distinct seasons in Central Kentucky. However, temperature and weather conditions can vary widely within those seasons. Spring and Fall are generally pleasant with frequent rain showers. Summer is usually hot and humid. Winter is moderately cold with mixed precipitation.",
+      "name": "Abraham Lincoln Birthplace",
+      "designation": "National Historical Park"
     }
   ]
 }

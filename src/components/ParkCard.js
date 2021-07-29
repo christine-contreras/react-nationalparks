@@ -44,7 +44,7 @@ export default function ParkCard({parkInfo, handleSaveParks, handleUnsavePark, h
                         </IconButton>
                     </Tooltip>
                     :
-                    <Tooltip title="Save Movie" arrow>
+                    <Tooltip title="Remove Park" arrow>
                     <IconButton color="primary"
                     onClick={() => handleUnsavePark(parkInfo)}
                     >

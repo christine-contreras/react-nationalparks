@@ -1,11 +1,11 @@
 import React from 'react'
 import ParksContainer from './ParksContainer'
 
-export default function SavedParks({location, savedParks, handleUnsavePark, handleSaveParks, handleSelectPark}) {
+export default function SavedParks({history, savedParks, handleUnsavePark, handleSaveParks, handleSelectPark}) {
     return (
         <>
             <ParksContainer
-            history={this.props.history}
+            history={history}
             title="Saved Parks"
             savedParks={savedParks}
             handleSaveParks={handleSaveParks}

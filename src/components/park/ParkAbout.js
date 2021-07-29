@@ -1,9 +1,11 @@
 import React from 'react'
 import { renderPhoneNumber } from '../../renderPhoneNumber'
-import { Grid, Divider, Typography, List, ListItem, Button } from '@material-ui/core'
+import { Grid, Divider, Typography, List, ListItem, Button, Tooltip, IconButton } from '@material-ui/core'
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos'
+import FavoriteIcon from '@material-ui/icons/Favorite'
+import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder'
 
-export default function ParkAbout({info, url, contactInfo, image}) {
+export default function ParkAbout({info, url, contactInfo, image, parkIsSaved, handleUnsavePark, handleSaveParks, parkInfo}) {
 
     const imageStyle = {
         width: "100%",
@@ -22,13 +24,38 @@ export default function ParkAbout({info, url, contactInfo, image}) {
         className="details-about">
             <Divider className="background-3" />
 
-            <div>
-            <Typography variant="h3" component="h2" color="secondary" className="padding-top-lg">
-                About Park
-            </Typography>
-            <Typography variant="h4" component="p">
-             <span className="subtitle">Summary</span>
-            </Typography>
+            <Grid container
+            alignItems="center"
+            justifyContent="space-between">
+                <Grid item>
+                    <Typography variant="h3" component="h2" color="secondary" className="padding-top-lg">
+                    About Park
+                    </Typography>
+                    <Typography variant="h4" component="p">
+                    <span className="subtitle">Summary</span>
+                    </Typography>
+                </Grid>
+
+                <Grid item>
+                     { parkIsSaved === undefined ?
+                    <Tooltip title="Save Park" arrow>
+                        <IconButton color="primary"
+                        onClick={() => handleSaveParks(parkInfo)}
+                        >
+                            <FavoriteBorderIcon />
+                        </IconButton>
+                    </Tooltip>
+                    :
+                    <Tooltip title="Remove Park" arrow>
+                    <IconButton color="primary"
+                    onClick={() => handleUnsavePark(parkInfo)}
+                    >
+                        <FavoriteIcon />
+                    </IconButton>
+                    </Tooltip>
+                    }
+                </Grid>
+            </Grid>
             <Typography className="color-3 padding-top">
                 {info}
             </Typography>
@@ -60,7 +87,7 @@ export default function ParkAbout({info, url, contactInfo, image}) {
                     View Park Website
                 </Button>
             </div>
-            </div>
+            
             
             <div style={imageStyle} className="image-hidden-xs"></div>
         </Grid>

@@ -13,9 +13,9 @@ import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos'
 export class ParkDetails extends Component {
 
     //function to check if park is saved or not 
-    // checkIfParkIsSaved = (checkPark) => {
-    //     return savedParks.find(park => park.id === checkPark.id)
-    // }
+    checkIfParkIsSaved = (checkPark) => {
+        return this.props.savedParks.find(park => park.id === checkPark.id)
+    }
 
     render() {
         return (
@@ -52,8 +52,10 @@ export class ParkDetails extends Component {
                     url={this.props.park.url}
                     contactInfo={this.props.park.contacts}
                     image={this.props.park.images[0]}
+                    parkIsSaved={this.checkIfParkIsSaved(this.props.park)}
                     handleUnsavePark={this.props.handleUnsavePark}
                     handleSaveParks={this.props.handleSaveParks}
+                    parkInfo={this.props.park}
                      />
 
                     <Grid item

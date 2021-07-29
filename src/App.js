@@ -76,6 +76,7 @@ export class App extends Component {
         render={(routerProps) => (
           <SavedParks {...routerProps}
           savedParks={this.state.savedParks}
+          handleSelectPark={this.handleSelectPark}
           handleUnsavePark={this.handleUnsavePark}
           handleSaveParks={this.handleSaveParks}/>
         )}/>
