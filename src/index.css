@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;600&family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;&family=Roboto:wght@300;400;600&display=swap');
 
 body {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
@@ -52,11 +52,15 @@ body {
 
 
 .text-light{
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .center {
   text-align: center;
+}
+
+.strong{
+  font-weight: bold;
 }
 
 .padding-top{
@@ -65,4 +69,12 @@ body {
 
 .padding-top-lg{
   padding-top: .75em;
+}
+
+.relative{
+  position: relative;
+}
+
+.MuiGrid-direction-xs-column{
+  flex-flow: column nowrap;
 }

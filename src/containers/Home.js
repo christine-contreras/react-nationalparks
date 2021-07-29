@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Hero from '../components/home/Hero'
 import ParksContainer from './ParksContainer'
-const apiKey = process.env.REACT_APP_API_KEY
+const apiKey = process.env.REACT_APP_API_PARKS
 
 
 export class Home extends Component {

@@ -1,9 +1,36 @@
 import React from 'react'
+import { Grid, Typography } from '@material-ui/core'
 
-export default function ParkFees() {
+export default function ParkFees({image, fees}) {
+
+    const imageStyle = {
+        width: "100%",
+        height: "55%",
+        position: "relative",
+        left: 0,
+        top: 0,
+        background: `url(${image.url}) no-repeat center`,
+        backgroundSize: 'cover',
+        zIndex: -1,
+        display: 'flex',
+        alignItems: 'flex-end'
+      }
+
     return (
-        <div>
-            
-        </div>
+        <Grid item container style={imageStyle}>
+            <Grid item  className="details-fees text-light">
+                <Typography variant="h6" component="h3" gutterBottom>
+                    Entrance Fees
+                </Typography>
+
+                <Typography gutterBottom>
+                    <span className="strong">Cost: ${fees[0].cost}</span>
+                </Typography>
+
+                <Typography>
+                    {fees[0].description}
+                </Typography>
+            </Grid>
+        </Grid>
     )
 }

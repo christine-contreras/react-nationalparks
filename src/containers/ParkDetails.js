@@ -24,20 +24,22 @@ export class ParkDetails extends Component {
                     </Button>
                 </Grid>
 
-                <Grid item className="park-details">
-                    <ParkNav
-                    name={this.props.park.fullName}
-                    history={this.props.history}
-                    page={this.props.location.pathname}
-                    state={this.props.park.states}
-                    />
+                <Grid item container className="park-details">
+                    <Grid item xs={12} sm={12} sm={3}>
+                        <ParkNav
+                        state={this.props.park.states}
+                        name={this.props.park.fullName}
+                        history={this.props.history}
+                        page={this.props.location.pathname}
+                        
+                        />
 
-                    <ParkInfo
-                    hours={this.props.park.operatingHours[0]}
-                    address={this.props.park.addresses}
-                    directions={this.props.park.directionsInfo}
-                    directionsUrl={this.props.park.directionsUrl}
-                    />
+                        <ParkInfo
+                        hours={this.props.park.operatingHours[0]}
+                        address={this.props.park.addresses}
+                        directionsUrl={this.props.park.directionsUrl}
+                        />
+                    </Grid>
 
                     <ParkAbout
                     info={this.props.park.description}
@@ -46,11 +48,20 @@ export class ParkDetails extends Component {
                     image={this.props.park.images[0]}
                      />
 
-                    <ParkFees />
+                    <Grid item container
+                    xs={12} sm={12} sm={4}
+                    direction="column"
+                    className="relative">
+                        <ParkFees
+                        image={this.props.park.images[1]}
+                        fees={this.props.park.entranceFees}/>
 
-                    <ParkActivities />
+                        <Grid item container className="details-activities">
+                            <ParkActivities activities={this.props.park.activities}/>
 
-                    <ParkWeather />
+                            <ParkWeather address={this.props.park.addresses} description={this.props.park.weatherInfo}/>
+                        </Grid>
+                    </Grid>
                 </Grid>
 
             </Grid>

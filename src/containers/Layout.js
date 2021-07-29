@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => {
         page: {
             width: '100%',
             position: 'relative',
-            top: 140,
+            top: 118,
             maxWidth: 1400,
             margin: 'auto'
         }

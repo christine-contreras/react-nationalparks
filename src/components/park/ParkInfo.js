@@ -2,11 +2,10 @@ import React from 'react'
 import { Grid, Typography, Button, List, ListItem } from '@material-ui/core'
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos'
 
-export default function ParkInfo({hours, address, directions, directionsUrl}) {
+export default function ParkInfo({hours, address, directionsUrl}) {
 
     const validAddress = address.find(a => a.type === "Physical")
 
-    console.log(validAddress)
     return (
         <Grid item className="details-info background-2 text-light">
             <Typography variant="h6" component="h3" gutterBottom>
