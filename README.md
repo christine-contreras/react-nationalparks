@@ -1,6 +1,5 @@
 # State Adventures: A National Parks React App
 
-Perfect Date is a one-page app that pulls aggregate weather data so you can plan and save dates when weather historically looks good.
 State Adventures is a one-page app that pulls national parks information and campgrounds by state so you can plan your next outdoor adventure.
 
 - Search National Parks by state
