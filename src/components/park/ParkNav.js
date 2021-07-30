@@ -7,11 +7,11 @@ export default function ParkNav({name, state, history, page}) {
     const menuDetailItems = [
         {
             text: 'Overview',
-            path: '/park-details'
+            path: '/park-details/overview'
         },
         {
             text: 'Camping',
-            path: '/park-camping'
+            path: '/park-details/camping'
         }
     ]
 

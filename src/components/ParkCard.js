@@ -10,7 +10,7 @@ export default function ParkCard({parkInfo, handleSaveParks, handleUnsavePark, h
 
     const viewParkButtonClick = () => {
         handleSelectPark(parkInfo)
-        history.push('/park-details')
+        history.push('/park-details/overview')
     }
 
     return (

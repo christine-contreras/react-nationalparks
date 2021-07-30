@@ -1,22 +1,16 @@
 import React, { Component } from 'react'
 import '../css/Details.css'
+import {Route } from 'react-router-dom'
+
 import ParkNav from '../components/park/ParkNav'
 import ParkInfo from '../components/park/ParkInfo'
-import ParkAbout from '../components/park/ParkAbout'
-import ParkFees from '../components/park/ParkFees'
-import ParkActivities from '../components/park/ParkActivities'
-import ParkWeather from '../components/park/ParkWeather'
+import ParkOverview from './ParkOverview'
+import ParkCamping from './ParkCamping'
 
 import { Grid, Button } from '@material-ui/core'
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos'
 
 export class ParkDetails extends Component {
-
-    //function to check if park is saved or not 
-    checkIfParkIsSaved = (checkPark) => {
-        return this.props.savedParks.find(park => park.id === checkPark.id)
-    }
-
     render() {
         return (
             <Grid container>
@@ -37,7 +31,6 @@ export class ParkDetails extends Component {
                         name={this.props.park.fullName}
                         history={this.props.history}
                         page={this.props.location.pathname}
-                        
                         />
 
                         <ParkInfo
@@ -47,30 +40,25 @@ export class ParkDetails extends Component {
                         />
                     </Grid>
 
-                    <ParkAbout
-                    info={this.props.park.description}
-                    url={this.props.park.url}
-                    contactInfo={this.props.park.contacts}
-                    image={this.props.park.images[0]}
-                    parkIsSaved={this.checkIfParkIsSaved(this.props.park)}
-                    handleUnsavePark={this.props.handleUnsavePark}
-                    handleSaveParks={this.props.handleSaveParks}
-                    parkInfo={this.props.park}
-                     />
 
-                    <Grid item
-                    xs={12} sm={12} md={4}
-                    className="relative details-right">
-                        <ParkFees
-                        image={this.props.park.images[1]}
-                        fees={this.props.park.entranceFees}/>
+                    <Route path={`${this.props.match.path}/overview`}>
+                        <ParkOverview
+                        savedParks={this.props.savedParks}
+                        handleUnsavePark={this.props.handleUnsavePark}
+                        handleSaveParks={this.props.handleSaveParks}
+                        park={this.props.park}
+                            />
+                    </Route>
+                    <Route path={`${this.props.match.path}/camping`}>
+                        <ParkCamping
+                        parkcode={this.props.park.parkCode} 
+                        longitude={this.props.park.longitude}
+                        latitude={this.props.park.latitude}
+                        
+                        />
+                    </Route>
 
-                        <Grid item container className="details-activities">
-                            <ParkActivities activities={this.props.park.activities}/>
-
-                            <ParkWeather address={this.props.park.addresses} description={this.props.park.weatherInfo}/>
-                        </Grid>
-                    </Grid>
+                    
                 </Grid>
 
             </Grid>

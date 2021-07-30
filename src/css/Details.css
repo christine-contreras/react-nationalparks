@@ -134,3 +134,19 @@
         border-bottom-left-radius: 0;
     }
   }
+
+
+  /* camping */
+  .info-window{
+      max-width: 300px;
+  }
+
+  .info-window .MuiCardMedia-root{
+    width: 100%;
+    height: 200px;
+  }
+
+
+  .details-camping{
+    padding: 1em 2em;
+  }

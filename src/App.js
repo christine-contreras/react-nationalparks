@@ -81,7 +81,7 @@ export class App extends Component {
           handleSaveParks={this.handleSaveParks}/>
         )}/>
 
-        <Route exact path="/park-details"
+        <Route path="/park-details"
         render={(routerProps) => (
           <ParkDetails {...routerProps}
           park={this.state.selectedPark}
