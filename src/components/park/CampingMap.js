@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { GoogleMap, LoadScript, Marker, InfoWindow } from '@react-google-maps/api'
 import { Card, CardContent, Typography, CardMedia } from '@material-ui/core'
 const apiKey = process.env.REACT_APP_API_MAPS
@@ -8,52 +8,55 @@ const containerStyle = {
   height: '100%'
 }
 
-export class CampingMap extends Component {
-  render() {
-    return (
-      <LoadScript
+const CampingMap= ({latitude, longitude, campgrounds, selectedCampground, handleCampgroundClick, handleCampgroundWindowClick}) => {
+  return (
+    <LoadScript
         googleMapsApiKey={apiKey}
       >
         <GoogleMap
           mapContainerStyle={containerStyle}
-          center={{lat: this.props.latitude, lng: this.props.longitude}}
+          center={{lat: latitude, lng: longitude}}
           zoom={8}
         >
           {
-            this.props.campgrounds.length !== 0 
+            campgrounds.length !== 0 
             ?
-            this.props.campgrounds.map(campground => {
+            campgrounds.map(campground => {
               
               return (
                 <Marker key={campground.id}
                 position={{lat: parseInt(campground.latitude), lng: parseInt(campground.longitude)}}
-                onClick={() => this.props.handleCampgroundClick(campground)}
+                onClick={() => handleCampgroundClick(campground)}
 
               />
               )
             })
-            : null 
+            : 
+            
+            <Typography variant="h4" component="p" gutterBottom className="map-modal text-light">
+            No Campgrounds Avaliable
+            </Typography>
           }
 
           {
-            this.props.selectedCampground && (
+            selectedCampground && (
               <InfoWindow
-              position={{lat: parseInt(this.props.selectedCampground.latitude), lng: parseInt(this.props.selectedCampground.longitude)}}
-              onCloseClick={this.props.handleCampgroundWindowClick}
+              position={{lat: parseInt(selectedCampground.latitude), lng: parseInt(selectedCampground.longitude)}}
+              onCloseClick={handleCampgroundWindowClick}
               >
                 <Card elevation={0} className="info-window">
-                  {this.props.selectedCampground.images.length !== 0 ?
+                  {selectedCampground.images.length !== 0 ?
                   <CardMedia
-                  image={this.props.selectedCampground.images[0].url}
+                  image={selectedCampground.images[0].url}
                   />
                   : null
                    }
                    <CardContent>
                     <Typography variant="h6" component="p" color="secondary" gutterBottom>
-                      {this.props.selectedCampground.name}
+                      {selectedCampground.name}
                       </Typography>
                       <Typography variant="caption" component="p" color="secondary">
-                        {this.props.selectedCampground.description}
+                        {selectedCampground.description}
                     </Typography>
 
                    </CardContent>
@@ -63,8 +66,7 @@ export class CampingMap extends Component {
           }
         </GoogleMap>
       </LoadScript>
-    )
-  }
+  )
 }
 
 export default CampingMap

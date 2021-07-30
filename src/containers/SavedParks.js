@@ -1,7 +1,7 @@
 import React from 'react'
 import ParksContainer from './ParksContainer'
 
-export default function SavedParks({history, savedParks, handleUnsavePark, handleSaveParks, handleSelectPark}) {
+const SavedParks = ({history, savedParks, handleUnsavePark, handleSaveParks, handleSelectPark}) => {
     return (
         <>
             <ParksContainer
@@ -15,3 +15,5 @@ export default function SavedParks({history, savedParks, handleUnsavePark, handl
         </>
     )
 }
+
+export default SavedParks

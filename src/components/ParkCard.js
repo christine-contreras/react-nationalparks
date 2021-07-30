@@ -6,7 +6,7 @@ import FavoriteIcon from '@material-ui/icons/Favorite'
 import TrendingFlatIcon from '@material-ui/icons/TrendingFlat'
 
 
-export default function ParkCard({parkInfo, handleSaveParks, handleUnsavePark, handleSelectPark, history, parkIsSaved}) {
+const ParkCard = ({parkInfo, handleSaveParks, handleUnsavePark, handleSelectPark, history, parkIsSaved}) => {
 
     const viewParkButtonClick = () => {
         handleSelectPark(parkInfo)
@@ -68,3 +68,5 @@ export default function ParkCard({parkInfo, handleSaveParks, handleUnsavePark, h
         </Grid>
     )
 }
+
+export default ParkCard

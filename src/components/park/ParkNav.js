@@ -2,7 +2,7 @@ import React from 'react'
 import { Grid, List, ListItem, ListItemText, Divider, Typography } from '@material-ui/core'
 import { renderStateName } from '../../renderStateName'
 
-export default function ParkNav({name, state, history, page}) {
+const ParkNav = ({name, state, history, page}) => {
 
     const menuDetailItems = [
         {
@@ -41,3 +41,5 @@ export default function ParkNav({name, state, history, page}) {
         </Grid>
     )
 }
+
+export default ParkNav

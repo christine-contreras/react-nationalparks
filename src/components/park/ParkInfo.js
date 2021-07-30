@@ -2,7 +2,7 @@ import React from 'react'
 import { Grid, Typography, Button, List, ListItem } from '@material-ui/core'
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos'
 
-export default function ParkInfo({hours, address, directionsUrl}) {
+const ParkInfo = ({hours, address, directionsUrl}) => {
 
     const validAddress = address.find(a => a.type === "Physical")
 
@@ -60,3 +60,6 @@ export default function ParkInfo({hours, address, directionsUrl}) {
         </Grid>
     )
 }
+
+
+export default ParkInfo

@@ -5,7 +5,7 @@ import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos'
 import FavoriteIcon from '@material-ui/icons/Favorite'
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder'
 
-export default function ParkAbout({info, url, contactInfo, image, parkIsSaved, handleUnsavePark, handleSaveParks, parkInfo}) {
+const ParkAbout = ({info, url, contactInfo, image, parkIsSaved, handleUnsavePark, handleSaveParks, parkInfo}) => {
 
     const imageStyle = {
         width: "100%",
@@ -93,3 +93,5 @@ export default function ParkAbout({info, url, contactInfo, image, parkIsSaved, h
         </Grid>
     )
 }
+
+export default ParkAbout

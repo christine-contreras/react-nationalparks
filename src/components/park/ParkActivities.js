@@ -1,7 +1,7 @@
 import React from 'react'
 import { Grid, List, ListItem, ListItemText, Divider, Typography } from '@material-ui/core'
 
-export default function ParkActivities({activities}) {
+const ParkActivities = ({activities}) => {
     return (
         <Grid item className="details-activity-item item-1 background-1">
              <Typography variant="h6" component="h2" className="text-light" gutterBottom>
@@ -23,3 +23,5 @@ export default function ParkActivities({activities}) {
         </Grid>
     )
 }
+
+export default ParkActivities

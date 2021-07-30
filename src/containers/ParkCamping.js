@@ -4,7 +4,11 @@ import CampingInfo from '../components/park/CampingInfo'
 import { Grid } from '@material-ui/core'
 const apiKey = process.env.REACT_APP_API_PARKS
 
+
+
 export class ParkCamping extends Component {
+    
+
     state = {
         campgrounds: [],
         selectedCampground: null
@@ -15,7 +19,6 @@ export class ParkCamping extends Component {
         fetch(`https://developer.nps.gov/api/v1/campgrounds?parkCode=${this.props.parkcode}=&api_key=${apiKey}&limit=500`)
         .then(res => res.json())
         .then(json => {
-            console.log(json)
             this.setState({
                 campgrounds: json.data
             })
@@ -34,6 +37,8 @@ export class ParkCamping extends Component {
         })
     }
     render() {
+        const height = document.getElementById('park-details').offsetHeight
+
         return (
             <>
             <Grid item
@@ -50,7 +55,9 @@ export class ParkCamping extends Component {
             </Grid>
 
             {this.state.selectedCampground && (
-                <CampingInfo campground={this.state.selectedCampground}/>
+                <CampingInfo
+                height={height}
+                campground={this.state.selectedCampground}/>
             )}
             </>
         )

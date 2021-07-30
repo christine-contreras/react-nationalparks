@@ -6,7 +6,7 @@ import ParkWeather from '../components/park/ParkWeather'
 
 import { Grid } from '@material-ui/core'
 
-export default function ParkOverview({park, handleUnsavePark, handleSaveParks, savedParks}) {
+const ParkOverview = ({park, handleUnsavePark, handleSaveParks, savedParks}) => {
 
      //function to check if park is saved or not 
      const checkIfParkIsSaved = (checkPark) => {
@@ -18,7 +18,7 @@ export default function ParkOverview({park, handleUnsavePark, handleSaveParks, s
         info={park.description}
         url={park.url}
         contactInfo={park.contacts}
-        image={park.images[0]}
+        image={park.images[Math.floor(Math.random() * park.images.length)]}
         parkIsSaved={checkIfParkIsSaved(park)}
         handleUnsavePark={handleUnsavePark}
         handleSaveParks={handleSaveParks}
@@ -29,7 +29,7 @@ export default function ParkOverview({park, handleUnsavePark, handleSaveParks, s
         xs={12} sm={12} md={4}
         className="relative details-right">
             <ParkFees
-            image={park.images[1]}
+            image={park.images[Math.floor(Math.random() * park.images.length)]}
             fees={park.entranceFees}/>
 
             <Grid item container className="details-activities">
@@ -41,3 +41,5 @@ export default function ParkOverview({park, handleUnsavePark, handleSaveParks, s
         </>
     )
 }
+
+export default ParkOverview

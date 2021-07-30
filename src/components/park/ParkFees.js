@@ -11,7 +11,7 @@ export default function ParkFees({image, fees}) {
         position: "relative",
         left: 0,
         top: 0,
-        background: image.url ? `url(${image.url}) no-repeat center` : '#A38B74',
+        background: image ? `url(${image.url}) no-repeat center` : '#A38B74',
         backgroundSize: 'cover',
         zIndex: -1,
         display: 'flex',

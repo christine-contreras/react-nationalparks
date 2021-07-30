@@ -1,3 +1,5 @@
+
+
 .park-details{
     width: 100%;
     height: auto;
@@ -149,4 +151,15 @@
 
   .details-camping{
     padding: 1em 2em;
+    overflow: scroll;
+  }
+
+  .map-modal{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(118, 151, 108, 0.75);
+      display: flex;
+      align-items: center;
+      justify-content: center;
   }

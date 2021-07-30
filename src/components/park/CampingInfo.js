@@ -2,18 +2,25 @@ import React from 'react'
 import { Grid, Typography, Button, List, ListItem } from '@material-ui/core'
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos'
 
-export default function CampingInfo({campground}) {
+
+
+const CampingInfo = ({campground, height}) => {
+
+    const style = {
+        maxHeight: height ? `${height}px` : '800px'
+    }
     return (
         <Grid item
             xs={12} sm={12} md={3}
+            style={style}
             className="details-camping background-2 text-light">
             <Typography variant="h6" component="h3" gutterBottom>
                 Campground Information
             </Typography>
 
             {
-                campground.operatingHours && (
-                    <>
+                campground.operatingHours.length !== 0 ?
+                <>
                     <Typography variant="subtitle1" component="p" className="padding-top">
                         Hours
                     </Typography>
@@ -21,7 +28,7 @@ export default function CampingInfo({campground}) {
                         {campground.operatingHours[0].description}
                     </Typography>
                     </>
-                )
+                : null 
                 
             }
 
@@ -98,3 +105,6 @@ export default function CampingInfo({campground}) {
         </Grid>
     )
 }
+
+
+export default CampingInfo

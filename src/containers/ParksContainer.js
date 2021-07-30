@@ -3,7 +3,7 @@ import { Grid, Typography } from '@material-ui/core'
 import ParkCard from '../components/ParkCard'
 import { renderStateName } from '../renderStateName'
 
-export default function ParksContainer({title, parkState, parks, handleSaveParks, handleUnsavePark, handleSelectPark, history, savedParks}) {
+const ParksContainer = ({title, parkState, parks, handleSaveParks, handleUnsavePark, handleSelectPark, history, savedParks}) => {
 
     //function to check if park is saved or not 
     const checkIfParkIsSaved = (checkPark) => {
@@ -12,6 +12,7 @@ export default function ParksContainer({title, parkState, parks, handleSaveParks
 
     return (
         <Grid container
+        id="results"
         direction="column"
         justifyContent="center"
         alignItems="center" >
@@ -43,3 +44,5 @@ export default function ParksContainer({title, parkState, parks, handleSaveParks
         </Grid>
     )
 }
+
+export default ParksContainer
