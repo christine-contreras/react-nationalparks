@@ -15,7 +15,7 @@ export class ParkWeather extends Component {
     componentDidMount(){
         const validAddress = this.props.address.find(a => a.type === "Physical")
 
-        fetch(`http://api.weatherstack.com/current?access_key=${apiKey}&units=f&query=${validAddress.postalCode}`)
+        fetch(`https://api.weatherstack.com/current?access_key=${apiKey}&units=f&query=${validAddress.postalCode}`)
         .then(res => res.json())
         .then(json => {
   

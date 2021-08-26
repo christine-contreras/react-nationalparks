@@ -16,7 +16,6 @@ export class Home extends Component {
         fetch(`https://developer.nps.gov/api/v1/parks?api_key=${apiKey}&limit=50`)
         .then(response => response.json())
         .then(json => {
-            // console.log(json)
             const newArray = []
             for(let i = 0; i < 4; i++) {
                 newArray.push(json.data[Math.floor(Math.random()*json.data.length)])

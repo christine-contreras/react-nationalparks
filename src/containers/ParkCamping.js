@@ -7,8 +7,6 @@ const apiKey = process.env.REACT_APP_API_PARKS
 
 
 export class ParkCamping extends Component {
-    
-
     state = {
         campgrounds: [],
         selectedCampground: null
